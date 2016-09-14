@@ -44,7 +44,7 @@
       {
         "name": "http-build",
         "type": "custom",
-        "commandLine": "echo 'Compiling...' && cd ${current.project.path}/http && $CC -lartik-sdk-base -I$CPATH/connectivity -I$CPATH/base -lpthread -g artik_http_test.c && echo 'Compilation succeeded. You may need to refresh project tree to find compiled binary.'",
+        "commandLine": "echo 'Compiling...' && cd ${current.project.path}/http && $CC -lartik-sdk-base -I$CPATH/connectivity -I$CPATH/base -lpthread -g artik_http_test.c -o http_test && echo 'Compilation succeeded. You may need to refresh project tree to find compiled binary.'",
         "attributes": {
           "previewUrl": ""
         }
@@ -52,7 +52,7 @@
       {
         "name": "adc-build",
         "type": "custom",
-        "commandLine": "echo 'Compiling...' && cd ${current.project.path}/adc && $CC -lartik-sdk-base -I$CPATH/systemio -I$CPATH/base -lpthread -g artik_adc_test.c && echo 'Compilation succeeded. You may need to refresh project tree to find compiled binary.'",
+        "commandLine": "echo 'Compiling...' && cd ${current.project.path}/adc && $CC -lartik-sdk-base -I$CPATH/systemio -I$CPATH/base -lpthread -g artik_adc_test.c -o adc_test && echo 'Compilation succeeded. You may need to refresh project tree to find compiled binary.'",
         "attributes": {
           "previewUrl": ""
         }
@@ -60,7 +60,7 @@
       {
         "name": "bluetooth-build",
         "type": "custom",
-        "commandLine": "echo 'Compiling...' && cd ${current.project.path}/bluetooth && $CC -lartik-sdk-base -I$CPATH/bluetooth -I$CPATH/base -lpthread -g artik_bluetooth_test.c && echo 'Compilation succeeded. You may need to refresh project tree to find compiled binary.'",
+        "commandLine": "echo 'Compiling...' && cd ${current.project.path}/bluetooth && $CC -lartik-sdk-base -I$CPATH/bluetooth -I$CPATH/base -lpthread -g artik_bluetooth_test.c -o bluetooth_test && echo 'Compilation succeeded. You may need to refresh project tree to find compiled binary.'",
         "attributes": {
           "previewUrl": ""
         }
@@ -68,7 +68,7 @@
       {
         "name": "cloud-build",
         "type": "custom",
-        "commandLine": "echo 'Compiling...' && cd ${current.project.path}/cloud && $CC -lartik-sdk-base -I$CPATH/connectivity -I$CPATH/base -lpthread -g artik_cloud_test.c && echo 'Compilation succeeded. You may need to refresh project tree to find compiled binary.'",
+        "commandLine": "echo 'Compiling...' && cd ${current.project.path}/cloud && $CC -lartik-sdk-base -I$CPATH/connectivity -I$CPATH/base -lpthread -g artik_cloud_test.c -o cloud_test && echo 'Compilation succeeded. You may need to refresh project tree to find compiled binary.'",
         "attributes": {
           "previewUrl": ""
         }
@@ -76,7 +76,7 @@
       {
         "name": "gpio-build",
         "type": "custom",
-        "commandLine": "echo 'Compiling...' && cd ${current.project.path}/gpio && $CC -lartik-sdk-base -I$CPATH/systemio -I$CPATH/base -lpthread -g artik_gpio_test.c && echo 'Compilation succeeded. You may need to refresh project tree to find compiled binary.'",
+        "commandLine": "echo 'Compiling...' && cd ${current.project.path}/gpio && $CC -lartik-sdk-base -I$CPATH/systemio -I$CPATH/base -lpthread -g artik_gpio_test.c -o gpio_test && echo 'Compilation succeeded. You may need to refresh project tree to find compiled binary.'",
         "attributes": {
           "previewUrl": ""
         }
@@ -84,7 +84,7 @@
       {
         "name": "i2c-build",
         "type": "custom",
-        "commandLine": "echo 'Compiling...' && cd ${current.project.path}/i2c && $CC -lartik-sdk-base -I$CPATH/systemio -I$CPATH/base -lpthread -g artik_i2c_test.c && echo 'Compilation succeeded. You may need to refresh project tree to find compiled binary.'",
+        "commandLine": "echo 'Compiling...' && cd ${current.project.path}/i2c && $CC -lartik-sdk-base -I$CPATH/systemio -I$CPATH/base -lpthread -g artik_i2c_test.c -o i2c_test && echo 'Compilation succeeded. You may need to refresh project tree to find compiled binary.'",
         "attributes": {
           "previewUrl": ""
         }
@@ -92,7 +92,7 @@
       {
         "name": "media-build",
         "type": "custom",
-        "commandLine": "echo 'Compiling...' && cd ${current.project.path}/media && $CC -lartik-sdk-base -I$CPATH/media -I$CPATH/base -lpthread -g artik_media_test.c && echo 'Compilation succeeded. You may need to refresh project tree to find compiled binary.'",
+        "commandLine": "echo 'Compiling...' && cd ${current.project.path}/media && $CC -lartik-sdk-base -I$CPATH/media -I$CPATH/base -lpthread -g artik_media_test.c -o media_test && echo 'Compilation succeeded. You may need to refresh project tree to find compiled binary.'",
         "attributes": {
           "previewUrl": ""
         }
@@ -100,7 +100,7 @@
       {
         "name": "network-build",
         "type": "custom",
-        "commandLine": "echo 'Compiling...' && cd ${current.project.path}/network && $CC -lartik-sdk-base -I$CPATH/connectivity -I$CPATH/base -lpthread -g artik_network_test.c && echo 'Compilation succeeded. You may need to refresh project tree to find compiled binary.'",
+        "commandLine": "echo 'Compiling...' && cd ${current.project.path}/network && $CC -lartik-sdk-base -I$CPATH/connectivity -I$CPATH/base -lpthread -g artik_network_test.c -o network_test && echo 'Compilation succeeded. You may need to refresh project tree to find compiled binary.'",
         "attributes": {
           "previewUrl": ""
         }
@@ -108,7 +108,7 @@
       {
         "name": "pwm-build",
         "type": "custom",
-        "commandLine": "echo 'Compiling...' && cd ${current.project.path}/pwm && $CC -lartik-sdk-base -I$CPATH/systemio -I$CPATH/base -lpthread -g artik_pwm_test.c && echo 'Compilation succeeded. You may need to refresh project tree to find compiled binary.'",
+        "commandLine": "echo 'Compiling...' && cd ${current.project.path}/pwm && $CC -lartik-sdk-base -I$CPATH/systemio -I$CPATH/base -lpthread -g artik_pwm_test.c -o pwm_test && echo 'Compilation succeeded. You may need to refresh project tree to find compiled binary.'",
         "attributes": {
           "previewUrl": ""
         }
@@ -116,7 +116,7 @@
       {
         "name": "serial-build",
         "type": "custom",
-        "commandLine": "echo 'Compiling...' && cd ${current.project.path}/serial && $CC -lartik-sdk-base -I$CPATH/systemio -I$CPATH/base -lpthread -g artik_serial_test.c && echo 'Compilation succeeded. You may need to refresh project tree to find compiled binary.'",
+        "commandLine": "echo 'Compiling...' && cd ${current.project.path}/serial && $CC -lartik-sdk-base -I$CPATH/systemio -I$CPATH/base -lpthread -g artik_serial_test.c -o serial_test && echo 'Compilation succeeded. You may need to refresh project tree to find compiled binary.'",
         "attributes": {
           "previewUrl": ""
         }
@@ -124,7 +124,7 @@
       {
         "name": "spi-build",
         "type": "custom",
-        "commandLine": "echo 'Compiling...' && cd ${current.project.path}/spi && $CC -lartik-sdk-base -I$CPATH/systemio -I$CPATH/base -lpthread -g artik_spi_test.c && echo 'Compilation succeeded. You may need to refresh project tree to find compiled binary.'",
+        "commandLine": "echo 'Compiling...' && cd ${current.project.path}/spi && $CC -lartik-sdk-base -I$CPATH/systemio -I$CPATH/base -lpthread -g artik_spi_test.c -o spi_test && echo 'Compilation succeeded. You may need to refresh project tree to find compiled binary.'",
         "attributes": {
           "previewUrl": ""
         }
@@ -132,7 +132,7 @@
       {
         "name": "time-build",
         "type": "custom",
-        "commandLine": "echo 'Compiling...' && cd ${current.project.path}/time && $CC -lartik-sdk-base -I$CPATH/systemio -I$CPATH/base -lpthread -g artik_time_test.c && echo 'Compilation succeeded. You may need to refresh project tree to find compiled binary.'",
+        "commandLine": "echo 'Compiling...' && cd ${current.project.path}/time && $CC -lartik-sdk-base -I$CPATH/systemio -I$CPATH/base -lpthread -g artik_time_test.c -o time_test && echo 'Compilation succeeded. You may need to refresh project tree to find compiled binary.'",
         "attributes": {
           "previewUrl": ""
         }
@@ -140,7 +140,7 @@
       {
         "name": "wifi-build",
         "type": "custom",
-        "commandLine": "echo 'Compiling...' && cd ${current.project.path}/wifi && $CC -lartik-sdk-base -I$CPATH/wifi -I$CPATH/base -lpthread -g artik_wifi_test.c && echo 'Compilation succeeded. You may need to refresh project tree to find compiled binary.'",
+        "commandLine": "echo 'Compiling...' && cd ${current.project.path}/wifi && $CC -lartik-sdk-base -I$CPATH/wifi -I$CPATH/base -lpthread -g artik_wifi_test.c -o wifi_test && echo 'Compilation succeeded. You may need to refresh project tree to find compiled binary.'",
         "attributes": {
           "previewUrl": ""
         }
@@ -148,7 +148,7 @@
       {
         "name": "zigbee-build",
         "type": "custom",
-        "commandLine": "echo 'Compiling...' && cd ${current.project.path}/zigbee && $CC -lartik-sdk-base -I$CPATH/zigbee -I$CPATH/base -lpthread -g artik_zigbee_test.c && echo 'Compilation succeeded. You may need to refresh project tree to find compiled binary.'",
+        "commandLine": "echo 'Compiling...' && cd ${current.project.path}/zigbee && $CC -lartik-sdk-base -I$CPATH/zigbee -I$CPATH/base -lpthread -g artik_zigbee_test.c -o zigbee_test && echo 'Compilation succeeded. You may need to refresh project tree to find compiled binary.'",
         "attributes": {
           "previewUrl": ""
         }
